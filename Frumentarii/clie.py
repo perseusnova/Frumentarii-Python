@@ -16,8 +16,14 @@ import os
 # import client
 # from header import print_header as ph
 
+logging.basicConfig(filename=r'C:\Program Files\frumentarii\frumentarii.log',format='%(asctime)s %(message)s')
+logging.info('clie package')
+logging.info('imported packages')
+logging.info('logging set up')
+
 
 s = socket(AF_INET, SOCK_DGRAM)
+logging.info('assigned socket')
 try:
 # doesn't even have to be reachable
     s.connect(('10.255.255.255', 1))
@@ -28,10 +34,11 @@ finally:
     s.close()
 TCP_IP = gethostbyname(IP)
 TCP_PORT = 13000
-
+logging.info('found IP address of machine')
 message = {
     
 }
+logging.info('createed message dict')
 '''
 message = {
     "type" : "handshake" or "message"
@@ -40,21 +47,6 @@ message = {
     "msg"  : "Hello World!"
     
     }'''
-def client_side(server_add):
-
-    TCP_IP = server_add
-    TCP_PORT = 13000
-    BUFFER_SIZE = 1024
-    MESSAGE = input("send: ")
-    s = socket(AF_INET, SOCK_STREAM)
-    s.connect((TCP_IP, TCP_PORT))
-    s.send(bytes(MESSAGE, 'utf-8'))
-    data = s.recv(BUFFER_SIZE)
-    s.close() 
-    #TODO keep it alive
-    return server_add
-
-
 
 class MyTCPHandler(socketserver.BaseRequestHandler):
     
@@ -62,21 +54,26 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
         self.logger = logging.getLogger('ClientLogger')
         self.logger.debug('__init__')
         socketserver.BaseRequestHandler.__init__(self, request, client_address, server)
+        logging.info('TCP handler initialised')
         return
             
     def handle(self):
         while 1:
             self.data = self.request.recv(1024)
+            logging.info('request recieved ')
             if not self.data:
+                logging.exception('data recieved is not correct')
                 break
             self.data = self.data.strip()
             data = self.data
+            logging.info('stripped data')
             self.request.send(self.data.upper())
             #TODO change the read_message to handle both handle_types and call the appropriate func
             MyTCPHandler.read_message(data)
     
     def client_handshake(server_add,username):
 
+        logging.info('handshake started')
         sendto = "blank"
         handle_type = "handshake"
         TCP_IP = server_add
@@ -92,9 +89,12 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
         #TODO add erroor handliong to send to GUI
         s = socket(AF_INET, SOCK_STREAM)
         s.connect((TCP_IP, TCP_PORT))
+        logging.info('connected to server')
         message = str(message_dict)
         message = json.dumps(message).encode('utf-8')
+        logging.info('converted message')
         s.send((message))
+        logging.info('message sent')
         #tml.message.send_message(message_dict)
     
         
@@ -171,6 +171,7 @@ class start_up():
         server_add = '192.168.10.108' #TODOinput("Please enter a server IP: ")
         hostname = socket.gethostname()
         local_ip = socket.gethostbyname(hostname)
+        logging.info('got host IP')
         #client.MyTCPHandler.client_handshake(server_add,username)
         
     

@@ -18,7 +18,7 @@ setup(
     long_description=readme,
     author='Jack Easton',
     author_email='jack.east0n@outlook.co.uk',
-    url='https://github.com/perseusnova',
+    url='https://github.com/perseusnova/Frumentarii-Python',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )

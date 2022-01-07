@@ -6,7 +6,7 @@ import socket
 from threading import local
 from time import sleep
 from typing import ValuesView
-import logging as lg
+import logging
 import PySimpleGUI as sg
 import art
 from colorama import Back, Fore, Style, init
@@ -19,6 +19,8 @@ import clie as clie
 
 APP_NAME = ClientConfig(); APP_NAME
 APP_VERSION = '1.1.1'
+logging.basicConfig(filename=r'C:\Program Files\frumentarii\frumentarii.log',format='%(asctime)s %(message)s')
+logging.info('Main started, logging set up')
 
 def print_status_info(info):
     total = info.get(u'total')
