@@ -1,21 +1,10 @@
 import json
 import os
-import sys
 import time
 import socket
-from threading import local
-from time import sleep
-from typing import ValuesView
 import logging
 import PySimpleGUI as sg
-import art
-from colorama import Back, Fore, Style, init
-from PySimpleGUI.PySimpleGUI import SELECT_MODE_SINGLE
-from termcolor import colored
-from tqdm import tqdm, trange
-from pyupdater.client import Client
-from client_config import ClientConfig
-import clie as clie
+#from client_config import ClientConfig
 
 f = os.fspath("log.logs")
 logger = logging.getLogger("")
@@ -29,40 +18,40 @@ consoleHandler = logging.StreamHandler()
 consoleHandler.setFormatter(logFormatter)
 rootLogger.addHandler(consoleHandler)
 
-APP_NAME = ClientConfig(); APP_NAME
-APP_VERSION = '1.1.1'
+# APP_NAME = ClientConfig(); APP_NAME
+# APP_VERSION = '1.1.1'
 logging.basicConfig(filename=r'C:\Program Files\frumentarii\frumentarii.log',format='%(asctime)s %(message)s')
 logging.info('Main started, logging set up')
 
-def print_status_info(info):
-    total = info.get(u'total')
-    downloaded = info.get(u'downloaded')
-    status = info.get(u'status')
-    print(downloaded, total, status)
+# def print_status_info(info):
+#     total = info.get(u'total')
+#     downloaded = info.get(u'downloaded')
+#     status = info.get(u'status')
+#     print(downloaded, total, status)
     
-client = Client(ClientConfig())
-client.refresh()
+# client = Client(ClientConfig())
+# client.refresh()
 
-client.add_progress_hook(print_status_info)
-app_update = client.update_check(APP_NAME, APP_VERSION)
+# client.add_progress_hook(print_status_info)
+# app_update = client.update_check(APP_NAME, APP_VERSION)
 
-if app_update is not None:
+# if app_update is not None:
     
-    app_update.download()
-try: 
-    if app_update.is_downloaded():
+#     app_update.download()
+# try: 
+#     if app_update.is_downloaded():
         
-        app_update.extract_overwrite()
-except AttributeError: 
-    logger.error('%s' %(AttributeError))
+#         app_update.extract_overwrite()
+# except AttributeError: 
+#     logger.error('%s' %(AttributeError))
 
-try:
+# try:
     
-    if app_update.is_downloaded():
+#     if app_update.is_downloaded():
     
-        app_update.extract_restart()
-except AttributeError: 
-    logger.error('%s' %(AttributeError))
+#         app_update.extract_restart()
+# except AttributeError: 
+#     logger.error('%s' %(AttributeError))
 # #684 , 89
 # sg.theme('DarkPurple6')
 # animation = r'E:\GIT\chatterminal\giphy.gif'

@@ -360,3 +360,6 @@ TypeError: a bytes-like object is required, not 'NoneType'
 2022-01-07 20:32:06,545 [MainThread  ] [ERROR]  <class 'AttributeError'>
 2022-01-07 20:32:06,545 [MainThread  ] [ERROR]  <class 'AttributeError'>
 2022-01-07 20:32:06,545 [MainThread  ] [ERROR]  <class 'AttributeError'>
+2022-01-07 20:42:16,058 [MainThread  ] [INFO ]  Main started, logging set up
+2022-01-07 20:47:18,856 [MainThread  ] [INFO ]  Main started, logging set up
+2022-01-07 20:52:40,442 [MainThread  ] [INFO ]  Main started, logging set up

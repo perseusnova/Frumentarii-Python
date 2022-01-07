@@ -1,4 +1,5 @@
 class ClientConfig(object):
+    
     PUBLIC_KEY = 'coGBxfv6BmRyw3TuucG2Awds5gRlk5fwxiDwAIIQ5v4'
     APP_NAME = 'frumentarii'
     COMPANY_NAME = 'JackEaston'
