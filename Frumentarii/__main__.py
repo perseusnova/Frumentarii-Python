@@ -2,22 +2,19 @@ import json
 import os
 import sys
 import time
-from socket import *
-# import terminalv2 as tml
+import socket
 from threading import local
 from time import sleep
 from typing import ValuesView
-
-# import terminalv2 as tmlv2
+import logging as lg
 import PySimpleGUI as sg
-from art import *
+import art
 from colorama import Back, Fore, Style, init
 from PySimpleGUI.PySimpleGUI import SELECT_MODE_SINGLE
 from termcolor import colored
 from tqdm import tqdm, trange
 from pyupdater.client import Client
 from client_config import ClientConfig
-
 import clie as clie
 
 APP_NAME = ClientConfig(); APP_NAME
