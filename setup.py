@@ -12,13 +12,13 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
-    version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    name='Frumentarii',
+    version='1.0.0',
+    description='The client side application for local network chat',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Jack Easton',
+    author_email='jack.east0n@outlook.co.uk',
+    url='https://github.com/perseusnova',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )
