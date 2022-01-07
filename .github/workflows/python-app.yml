@@ -34,7 +34,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-
     - with:
           name: pytest-results-${{ matrix.python-version }}
           path: Frumentarii-python/test-results-${{ matrix.python-version }}.xml
