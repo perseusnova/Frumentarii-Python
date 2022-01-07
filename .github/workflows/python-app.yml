@@ -34,7 +34,8 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-      with:
+
+    - with:
           name: pytest-results-${{ matrix.python-version }}
           path: Frumentarii-python/test-results-${{ matrix.python-version }}.xml
         # Use always() to always run this step to publish test results when there are test failures
