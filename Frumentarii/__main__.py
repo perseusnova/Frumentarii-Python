@@ -17,6 +17,18 @@ from pyupdater.client import Client
 from client_config import ClientConfig
 import clie as clie
 
+f = os.fspath("log.logs")
+logger = logging.getLogger("")
+logger.setLevel(logging.INFO)
+logFormatter = logging.Formatter("%(asctime)s [%(threadName)-12.12s] [%(levelname)-5.5s]  %(message)s")
+rootLogger = logging.getLogger()
+fileHandler = logging.FileHandler(f)
+fileHandler.setFormatter(logFormatter)
+rootLogger.addHandler(fileHandler)
+consoleHandler = logging.StreamHandler()
+consoleHandler.setFormatter(logFormatter)
+rootLogger.addHandler(consoleHandler)
+
 APP_NAME = ClientConfig(); APP_NAME
 APP_VERSION = '1.1.1'
 logging.basicConfig(filename=r'C:\Program Files\frumentarii\frumentarii.log',format='%(asctime)s %(message)s')

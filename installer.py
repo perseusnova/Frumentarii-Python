@@ -1,9 +1,20 @@
 import os, shutil, logging, getpass
-from time import sleep
 
 
-logging.basicConfig(filename='logs.log',format='%(asctime)s %(message)s')
-logging.info('installer started, logging set up')
+#logging file for installer
+
+f = os.fspath("log.logs")
+logger = logging.getLogger("")
+logger.setLevel(logging.INFO)
+logFormatter = logging.Formatter("%(asctime)s [%(threadName)-12.12s] [%(levelname)-5.5s]  %(message)s")
+rootLogger = logging.getLogger()
+fileHandler = logging.FileHandler(f)
+fileHandler.setFormatter(logFormatter)
+rootLogger.addHandler(fileHandler)
+consoleHandler = logging.StreamHandler()
+consoleHandler.setFormatter(logFormatter)
+rootLogger.addHandler(consoleHandler)
+logger.info('installer started, logging set up')
 
 str_header = """
                         ````````````````````````````````````````````````````````````````````````````````````````````````````
@@ -82,94 +93,86 @@ str_header = """
         $$    $$/ $$       |$$   $$$/ $$ | $$$ |$$    $$/ / $$   |$$       |      $$ |  $$ |$$ |  $$ |$$    $$/ $$ | $$  |$$       |$$       |$$ |  $$ |
         $$$$$$$/  $$$$$$$$/  $$$$$$/  $$/   $$/ $$$$$$$/  $$$$$$/ $$$$$$$$/       $$/   $$/ $$/   $$/  $$$$$$/  $$/   $$/ $$$$$$$$/ $$$$$$$$/ $$/   $$/                     
 """
-print(str_header)
-logging.info("printing str_header")
-sleep(2)
-print("creating logging path")
-logging.info("creating logging path")
-sleep(1)
+logger.info("printing str_header")
+
+logger.info("creating logging path")
+
 # DirectorY
 user = getpass.getuser()
-print("getting user: %s" % (user))
-logging.info("getting user: %s" % (user))
-logging.info("creating directory variable")
-sleep(1)
+logger.info("getting user: %s" % (user))
+logger.info("creating directory variable")
+
 # Parent Directory path
 directory = "\\frumentarii"
-print(directory)
-print(user)
 parent_dir = "C:\\Users\\%s" % user
-print(parent_dir)
-print("creating Parent Directory path: ", parent_dir)
-logging.info("Parent Directory path") 
-sleep(2)
+logger.info("Parent Directory path %s" % (parent_dir))
+
 # Path
 path = parent_dir, directory
 path = ''.join(path)
-print("created location: %s" % (path))
-logging.info("creating logging path")  
-sleep(2)
+
+logger.info("creating logging path")  
+
 exists = os.path.exists(path)
-print(exists)
+
 if exists==True:
       
-  print("Directory already exists, uninstalling")
-  logging.info("Directory %s already exists, uninstalling" % (path)) 
+  logger.info("Directory %s already exists, uninstalling" % (path)) 
   list_dir = os.listdir(path)
-  print(list_dir)
+  
   for filename in list_dir:
         
-        print(filename)
         file_path = os.path.join(path, filename)
-        print(file_path)
-        
+
         try:
           
           if os.path.isfile(file_path) or os.path.islink(file_path):
           
                 os.unlink(file_path)
-                print("File already exists, uninstalling %s" % (file_path))
-                logging.info("File already exists, uninstalling %s" % (file_path))
+                logger.info("File already exists, uninstalling %s" % (file_path))
                   
           elif os.path.isdir(file_path):
                 
                 shutil.rmtree(file_path)
-                print("Directory already exists, uninstalling %s" % (file_path))
-                logging.info("File already exists, uninstalling %s" % (file_path))  
+                logger.info("File already exists, uninstalling %s" % (file_path))  
                             
         except Exception as e:
           
-          print('Failed to delete %s. Reason: %s' % (file_path, e))
           logging.error('Failed to delete %s. Reason: %s' % (file_path, e))
           
-  print("continue with install")
-  logging.info("continue with install")
+  logger.info("continue with install")
   
 else: 
   
-  print("continue with install")
-  logging.info("continue with install")
+  logger.info("continue with install")
   # Create the directory
-  print(path)
   os.mkdir(path)
-  print("Directory '% s' created" % directory)
-  sleep(2)
 
-print("installing exacutable")
-logging.info("installing exacutable")
-sleep(2)
+  
+logger.info("creating logging file and appending installer logs")
 
-print("closing installer")
-logging.info("closing installer")
-sleep(2)
+#file for logging application
+logging_file = path, "\\frumentarri.logs"
+logging_file = ''.join(logging_file) 
+lf = open(logging_file, "a")
+lf.write("##############Frumentari logs##############")
+#open and read the file after the appending:
 
-print("launching Frumentarri")
-sleep(2)
+logger.info("installing exacutable")
 
-logging.info("launching Frumentarri")
-print('program files can be found in: ',path)
-sleep(2)
 
+logger.info("closing installer")
+
+
+
+logger.info("launching Frumentarri")
+logger.info('program files can be found in: %s' % (path))
+
+d = open(f, 'r')
+for i in d.read():
+      lf.write(i)
+
+lf.close()
 
 # from Frumentarii.__main__ import main
 
