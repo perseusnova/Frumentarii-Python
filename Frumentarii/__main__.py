@@ -49,15 +49,20 @@ app_update = client.update_check(APP_NAME, APP_VERSION)
 if app_update is not None:
     
     app_update.download()
-    
-if app_update.is_downloaded():
-    
-    app_update.extract_overwrite()
-    
-if app_update.is_downloaded():
-    
-    app_update.extract_restart()
+try: 
+    if app_update.is_downloaded():
+        
+        app_update.extract_overwrite()
+except AttributeError: 
+    logger.error('%s' %(AttributeError))
 
+try:
+    
+    if app_update.is_downloaded():
+    
+        app_update.extract_restart()
+except AttributeError: 
+    logger.error('%s' %(AttributeError))
 # #684 , 89
 # sg.theme('DarkPurple6')
 # animation = r'E:\GIT\chatterminal\giphy.gif'

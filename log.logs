@@ -1,0 +1,362 @@
+2022-01-07 20:22:56,519 [MainThread  ] [INFO ]  assigned socket
+2022-01-07 20:22:56,520 [MainThread  ] [INFO ]  found IP address of machine
+2022-01-07 20:22:56,520 [MainThread  ] [INFO ]  createed message dict
+2022-01-07 20:22:56,520 [MainThread  ] [INFO ]  Main started, logging set up
+2022-01-07 20:22:56,520 [MainThread  ] [INFO ]  Main started, logging set up
+2022-01-07 20:22:56,521 [MainThread  ] [DEBUG]  Setting up directories...
+2022-01-07 20:22:56,521 [MainThread  ] [DEBUG]  Setting up directories...
+2022-01-07 20:22:56,522 [MainThread  ] [DEBUG]  Downloading key file
+2022-01-07 20:22:56,522 [MainThread  ] [DEBUG]  Downloading key file
+2022-01-07 20:22:56,523 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:22:56,523 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:22:56,524 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/keys.gz
+2022-01-07 20:22:56,524 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/keys.gz
+2022-01-07 20:22:56,723 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:22:56,723 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:22:56,725 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:22:56,725 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:22:56,725 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:22:56,725 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:22:56,726 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 484, in _get_key_data
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:22:56,726 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 484, in _get_key_data
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:22:56,728 [MainThread  ] [DEBUG]  Loading version file...
+2022-01-07 20:22:56,728 [MainThread  ] [DEBUG]  Loading version file...
+2022-01-07 20:22:56,729 [MainThread  ] [DEBUG]  Downloading online version file
+2022-01-07 20:22:56,729 [MainThread  ] [DEBUG]  Downloading online version file
+2022-01-07 20:22:56,730 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:22:56,730 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:22:56,730 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions-win.gz
+2022-01-07 20:22:56,730 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions-win.gz
+2022-01-07 20:22:56,905 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:22:56,905 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:22:56,907 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:22:56,907 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:22:56,907 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:22:56,907 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:22:56,909 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:22:56,909 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:22:56,910 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions.gz
+2022-01-07 20:22:56,910 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions.gz
+2022-01-07 20:22:57,088 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:22:57,088 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:22:57,090 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:22:57,090 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:22:57,090 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:22:57,090 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:22:57,092 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:22:57,092 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:22:57,092 [MainThread  ] [DEBUG]  Failed to download version file & no version file on filesystem
+2022-01-07 20:22:57,092 [MainThread  ] [DEBUG]  Failed to download version file & no version file on filesystem
+2022-01-07 20:22:57,093 [MainThread  ] [DEBUG]  App key is None
+2022-01-07 20:22:57,093 [MainThread  ] [DEBUG]  App key is None
+2022-01-07 20:22:57,094 [MainThread  ] [DEBUG]  No update manifest found
+2022-01-07 20:22:57,094 [MainThread  ] [DEBUG]  No update manifest found
+2022-01-07 20:27:33,014 [MainThread  ] [INFO ]  assigned socket
+2022-01-07 20:27:33,015 [MainThread  ] [INFO ]  found IP address of machine
+2022-01-07 20:27:33,015 [MainThread  ] [INFO ]  createed message dict
+2022-01-07 20:27:33,016 [MainThread  ] [INFO ]  Main started, logging set up
+2022-01-07 20:27:33,016 [MainThread  ] [INFO ]  Main started, logging set up
+2022-01-07 20:27:33,017 [MainThread  ] [DEBUG]  Setting up directories...
+2022-01-07 20:27:33,017 [MainThread  ] [DEBUG]  Setting up directories...
+2022-01-07 20:27:33,018 [MainThread  ] [DEBUG]  Downloading key file
+2022-01-07 20:27:33,018 [MainThread  ] [DEBUG]  Downloading key file
+2022-01-07 20:27:33,019 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:27:33,019 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:27:33,020 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/keys.gz
+2022-01-07 20:27:33,020 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/keys.gz
+2022-01-07 20:27:33,214 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:27:33,214 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:27:33,217 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:27:33,217 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:27:33,217 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:27:33,217 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:27:33,218 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 484, in _get_key_data
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:27:33,218 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 484, in _get_key_data
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:27:33,221 [MainThread  ] [DEBUG]  Loading version file...
+2022-01-07 20:27:33,221 [MainThread  ] [DEBUG]  Loading version file...
+2022-01-07 20:27:33,221 [MainThread  ] [DEBUG]  Downloading online version file
+2022-01-07 20:27:33,221 [MainThread  ] [DEBUG]  Downloading online version file
+2022-01-07 20:27:33,222 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:27:33,222 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:27:33,223 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions-win.gz
+2022-01-07 20:27:33,223 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions-win.gz
+2022-01-07 20:27:33,415 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:27:33,415 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:27:33,417 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:27:33,417 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:27:33,418 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:27:33,418 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:27:33,419 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:27:33,419 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:27:33,420 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions.gz
+2022-01-07 20:27:33,420 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions.gz
+2022-01-07 20:27:33,616 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:27:33,616 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:27:33,618 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:27:33,618 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:27:33,619 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:27:33,619 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:27:33,620 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:27:33,620 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:27:33,621 [MainThread  ] [DEBUG]  Failed to download version file & no version file on filesystem
+2022-01-07 20:27:33,621 [MainThread  ] [DEBUG]  Failed to download version file & no version file on filesystem
+2022-01-07 20:27:33,622 [MainThread  ] [DEBUG]  App key is None
+2022-01-07 20:27:33,622 [MainThread  ] [DEBUG]  App key is None
+2022-01-07 20:27:33,623 [MainThread  ] [DEBUG]  No update manifest found
+2022-01-07 20:27:33,623 [MainThread  ] [DEBUG]  No update manifest found
+2022-01-07 20:30:31,166 [MainThread  ] [INFO ]  assigned socket
+2022-01-07 20:30:31,167 [MainThread  ] [INFO ]  found IP address of machine
+2022-01-07 20:30:31,168 [MainThread  ] [INFO ]  createed message dict
+2022-01-07 20:30:31,168 [MainThread  ] [INFO ]  Main started, logging set up
+2022-01-07 20:30:31,168 [MainThread  ] [INFO ]  Main started, logging set up
+2022-01-07 20:30:31,169 [MainThread  ] [DEBUG]  Setting up directories...
+2022-01-07 20:30:31,169 [MainThread  ] [DEBUG]  Setting up directories...
+2022-01-07 20:30:31,170 [MainThread  ] [DEBUG]  Downloading key file
+2022-01-07 20:30:31,170 [MainThread  ] [DEBUG]  Downloading key file
+2022-01-07 20:30:31,171 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:30:31,171 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:30:31,172 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/keys.gz
+2022-01-07 20:30:31,172 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/keys.gz
+2022-01-07 20:30:31,369 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:30:31,369 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:30:31,371 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:30:31,371 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:30:31,371 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:30:31,371 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:30:31,372 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 484, in _get_key_data
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:30:31,372 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 484, in _get_key_data
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:30:31,374 [MainThread  ] [DEBUG]  Loading version file...
+2022-01-07 20:30:31,374 [MainThread  ] [DEBUG]  Loading version file...
+2022-01-07 20:30:31,375 [MainThread  ] [DEBUG]  Downloading online version file
+2022-01-07 20:30:31,375 [MainThread  ] [DEBUG]  Downloading online version file
+2022-01-07 20:30:31,376 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:30:31,376 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:30:31,377 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions-win.gz
+2022-01-07 20:30:31,377 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions-win.gz
+2022-01-07 20:30:31,572 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:30:31,572 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:30:31,574 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:30:31,574 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:30:31,574 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:30:31,574 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:30:31,576 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:30:31,576 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:30:31,576 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions.gz
+2022-01-07 20:30:31,576 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions.gz
+2022-01-07 20:30:31,755 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:30:31,755 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:30:31,757 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:30:31,757 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:30:31,757 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:30:31,757 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:30:31,759 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:30:31,759 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:30:31,760 [MainThread  ] [DEBUG]  Failed to download version file & no version file on filesystem
+2022-01-07 20:30:31,760 [MainThread  ] [DEBUG]  Failed to download version file & no version file on filesystem
+2022-01-07 20:30:31,761 [MainThread  ] [DEBUG]  App key is None
+2022-01-07 20:30:31,761 [MainThread  ] [DEBUG]  App key is None
+2022-01-07 20:30:31,761 [MainThread  ] [DEBUG]  No update manifest found
+2022-01-07 20:30:31,761 [MainThread  ] [DEBUG]  No update manifest found
+2022-01-07 20:30:31,762 [MainThread  ] [ERROR]  <class 'AttributeError'>
+2022-01-07 20:30:31,762 [MainThread  ] [ERROR]  <class 'AttributeError'>
+2022-01-07 20:32:05,948 [MainThread  ] [INFO ]  assigned socket
+2022-01-07 20:32:05,949 [MainThread  ] [INFO ]  found IP address of machine
+2022-01-07 20:32:05,949 [MainThread  ] [INFO ]  createed message dict
+2022-01-07 20:32:05,950 [MainThread  ] [INFO ]  Main started, logging set up
+2022-01-07 20:32:05,950 [MainThread  ] [INFO ]  Main started, logging set up
+2022-01-07 20:32:05,951 [MainThread  ] [DEBUG]  Setting up directories...
+2022-01-07 20:32:05,951 [MainThread  ] [DEBUG]  Setting up directories...
+2022-01-07 20:32:05,951 [MainThread  ] [DEBUG]  Downloading key file
+2022-01-07 20:32:05,951 [MainThread  ] [DEBUG]  Downloading key file
+2022-01-07 20:32:05,953 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:32:05,953 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:32:05,953 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/keys.gz
+2022-01-07 20:32:05,953 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/keys.gz
+2022-01-07 20:32:06,150 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:32:06,150 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:32:06,152 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:32:06,152 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:32:06,153 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:32:06,153 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:32:06,153 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 484, in _get_key_data
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:32:06,153 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 484, in _get_key_data
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:32:06,156 [MainThread  ] [DEBUG]  Loading version file...
+2022-01-07 20:32:06,156 [MainThread  ] [DEBUG]  Loading version file...
+2022-01-07 20:32:06,157 [MainThread  ] [DEBUG]  Downloading online version file
+2022-01-07 20:32:06,157 [MainThread  ] [DEBUG]  Downloading online version file
+2022-01-07 20:32:06,158 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:32:06,158 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:32:06,158 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions-win.gz
+2022-01-07 20:32:06,158 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions-win.gz
+2022-01-07 20:32:06,342 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:32:06,342 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:32:06,343 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:32:06,343 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:32:06,344 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:32:06,344 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:32:06,346 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:32:06,346 [MainThread  ] [DEBUG]  HTTP Timeout is 30
+2022-01-07 20:32:06,346 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions.gz
+2022-01-07 20:32:06,346 [MainThread  ] [DEBUG]  Url for request: https://github.com/perseusnova/Frumentarii-Python/versions.gz
+2022-01-07 20:32:06,538 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:32:06,538 [MainThread  ] [DEBUG]  Received a non-200 response 404
+2022-01-07 20:32:06,540 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:32:06,540 [MainThread  ] [DEBUG]  Could not create resource URL.
+2022-01-07 20:32:06,540 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:32:06,540 [MainThread  ] [DEBUG]  a bytes-like object is required, not 'NoneType'
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\pyupdater\client\__init__.py", line 450, in _get_manifest_from_http
+    decompressed_data = _gzip_decompress(data)
+  File "C:\Python39\lib\site-packages\dsdev_utils\helpers.py", line 50, in gzip_decompress
+    compressed_file.write(data)
+TypeError: a bytes-like object is required, not 'NoneType'
+2022-01-07 20:32:06,542 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:32:06,542 [MainThread  ] [DEBUG]  Version file download failed
+2022-01-07 20:32:06,543 [MainThread  ] [DEBUG]  Failed to download version file & no version file on filesystem
+2022-01-07 20:32:06,543 [MainThread  ] [DEBUG]  Failed to download version file & no version file on filesystem
+2022-01-07 20:32:06,544 [MainThread  ] [DEBUG]  App key is None
+2022-01-07 20:32:06,544 [MainThread  ] [DEBUG]  App key is None
+2022-01-07 20:32:06,544 [MainThread  ] [DEBUG]  No update manifest found
+2022-01-07 20:32:06,544 [MainThread  ] [DEBUG]  No update manifest found
+2022-01-07 20:32:06,545 [MainThread  ] [ERROR]  <class 'AttributeError'>
+2022-01-07 20:32:06,545 [MainThread  ] [ERROR]  <class 'AttributeError'>
+2022-01-07 20:32:06,545 [MainThread  ] [ERROR]  <class 'AttributeError'>
+2022-01-07 20:32:06,545 [MainThread  ] [ERROR]  <class 'AttributeError'>
